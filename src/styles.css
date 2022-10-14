@@ -1,0 +1,48 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#canvas {
+  position: absolute;
+  display: none;
+  z-index: 99999;
+  background: #fff;
+}
+
+#controls {
+  position: absolute;
+  z-index: 99999;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#controls .row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls .row div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+#controls .row .--active {
+  cursor: pointer;
+  background: #f00;
+  color: #fff;
+}
